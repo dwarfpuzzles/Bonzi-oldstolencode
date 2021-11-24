@@ -42,8 +42,7 @@ if (settings.express.serveStatic)
 		extensions: ['html']
 	}));
 
-var credentials = {  key: fs.readFileSync('./privkey3.pem'), cert: fs.readFileSync('./cert3.pem')};
-var server = require('https').createServer(credentials, app);
+var server = require('http').createServer(app);
   
 server.listenerCount(1);
 // Init socket.io
@@ -64,7 +63,7 @@ const Ban = require('./ban.js');
 Ban.init();
  
 // Start actually listening
-server.listen(448, function () {
+server.listen(port, function () {
 	console.log(
 		"Welcome to BonziWORLD Revived developer build 2.3.1-SNAPSHOT!\n",
 		"Time to meme!\n",
