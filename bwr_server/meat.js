@@ -132,16 +132,8 @@ const Discord = require("discord.js");
 const bot = new Discord.Client();
 const client = new Discord.Client();
 
-const TOKEN = process.env.TOKEN;
-
-bot.login(TOKEN);
-
 var bot_io = require("socket.io-client");
 var socketbot = bot_io("http://localhost:80");
-bot.on("ready", () => {
-    console.info(`Logged in as ${bot.user.tag}!`);
-    bot.channels.cache.get("855556901613207553").send("Hello here from BWR!");
-});
 
 function emojify(txt) {
     return txt.replace(/:(bonzi|evil|pink|earth|globe|sad|doggis|program|swag|flip):/g, '<img src="/img/emoji/$1.png">');
@@ -2011,17 +2003,6 @@ class User {
                 name: name,
                 say: sanitize(text, { allowedTags: [] }),
             });
-
-            if (this.public.name != "BonziBOT || $help") {
-                if (!this.public.name.includes("@everyone") && !this.public.name.includes("@here")) {
-                    if (!text.includes("@everyone") && !text.includes("@here")) {
-                        if (text.length <= 2000) {
-                            bot.channels.cache.get("855556901613207553").send("**" + this.public.name + " said: **`" + text + "`");
-                            bot.channels.cache.get("855575656322170912").send("**" + this.public.name + " said: **`" + text + "`");
-                        }
-                    }
-                }
-            }
         }
     }
 
@@ -2733,9 +2714,3 @@ socketbot.on('talk', function(data) {
                                     return output.join('');
                                 }
                             };
-
-bot.on("message", (msg) => {
-    if (msg.author.id != "738460035373596683" && msg.channel.id == "855556901613207553") {
-        socketbot.emit("talk", { text: [msg.author.username + " said: <small>" + msg.content + "</small>"] });
-    }
-});
