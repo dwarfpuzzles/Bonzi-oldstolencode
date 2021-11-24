@@ -1,0 +1,48 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background-color: #14161b;
+}
+
+.idiot {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	width: min-content;
+	margin-left: auto;
+	margin-right: auto;
+	color: #ffffff;
+	font-family: "IBM Plex Sans", sans-serif;
+	font-weight: 300;
+}
+
+.reallystupid {
+	display: grid;
+	grid-row-gap: 16px;
+	height: min-content;
+	width: min-content;
+}
+
+#slapcount {
+	width: 100%;
+}
+
+#stupidcat {
+	vertical-align: middle;
+	user-select: none;
+	-webkit-user-drag: none;
+	width: 14vw;
+}
+
+@media screen and (max-width:540px) {
+	#stupidcat {
+		width: auto;
+		height: 100vw;
+	}
+}
