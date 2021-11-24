@@ -87,3 +87,4 @@ nginx/**
 src/cordova/build.json
 bwr_server/ips.json
 bwr_server/rooms.json
+bwr_server/rooms.json
