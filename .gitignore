@@ -85,3 +85,5 @@ src/cordova/signing/**
 server/**
 nginx/**
 src/cordova/build.json
+bwr_server/ips.json
+bwr_server/rooms.json
