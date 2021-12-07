@@ -16,7 +16,9 @@ In a terminal/command prompt, navigate to where you'd like BonziWORLD to be plac
 git clone https://github.com/Seamusmario/BonziWORLD-Revived
 cd BonziWORLD
 ```
-
+Or, if you already have a folder named BonziWORLD, then do this.
+```
+git clone https://github.com/Seamusmario/bonzi.world-framework-remake/ bw2
 ### Client
 This part is unneeded. An pre-built version is available.
 
