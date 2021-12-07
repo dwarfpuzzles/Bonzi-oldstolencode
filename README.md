@@ -21,7 +21,7 @@ Or, if you already have a folder named BonziWORLD, then do this.
 git clone https://github.com/Seamusmario/bonzi.world-framework-remake/ bw2
 ### Client
 This part is unneeded. An pre-built version is available.
-
+```
 ### Server
 ```
 cd bwr-server
