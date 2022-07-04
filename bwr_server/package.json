@@ -28,7 +28,7 @@
     "marked": ">=0.3.18",
     "md5-file": "^5.0.0",
     "merge": "^2.1.1",
-    "minimist": ">=1.2.2",
+    "minimist": ">=1.2.6",
     "request": "^2.88.2",
     "sanitize-html": "^2.4.0",
     "socket.io": "^2.4.0",
