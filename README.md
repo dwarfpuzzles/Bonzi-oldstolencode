@@ -1,5 +1,8 @@
 # bonzi.world framework remake
 
+Now in Extended Support Release by dwarfpuzzles.
+
+
 This bonziworld respository is a remake of the bonzi.world framework, (a really bad one) which was used for BonziWORLD Revived.
 Feel free to use this as your own bonziworld server
 
